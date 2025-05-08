@@ -5,6 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .visually-hidden {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body class="is-preload">
 
@@ -52,6 +62,7 @@
           <!-- Search -->
           <section id="search" class="alt">
             <form method="post" action="#">
+              <label for="query" class="visually-hidden">Search this site</label>
               <input type="text" name="query" id="query" placeholder="Search" />
             </form>
           </section>
