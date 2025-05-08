@@ -5,6 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .visually-hidden {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body class="is-preload">
 
@@ -47,12 +57,16 @@
       <!-- Sidebar -->
       <div id="sidebar">
         <div class="inner">
+
+          <!-- Search -->
           <section id="search" class="alt">
             <form method="post" action="#">
+              <label for="query" class="visually-hidden">Search this site</label>
               <input type="text" name="query" id="query" placeholder="Search" />
             </form>
           </section>
 
+          <!-- Menu -->
           <nav id="menu">
             <header class="major">
               <h2>Menu</h2>
@@ -64,6 +78,7 @@
             </ul>
           </nav>
 
+          <!-- Footer -->
           <footer id="footer">
             <p class="copyright">
               &copy; Ryan Perry. Design: <a href="https://html5up.net">HTML5 UP</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
