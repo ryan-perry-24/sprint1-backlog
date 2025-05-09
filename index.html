@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNM8Z4HNMK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VNM8Z4HNMK');
-</script>
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryan Perry's Portfolio</title>
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Google Analytics Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNM8Z4HNMK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VNM8Z4HNMK');
+  </script>
+
   <style>
     .posts .image img {
       width: 300px;
@@ -33,32 +32,28 @@
   </style>
 </head>
 <body class="is-preload">
-  <!-- Wrapper -->
   <div id="wrapper">
-    <!-- Main Content -->
-    <div id="main">
+    <main id="main">
       <div class="inner">
-        <!-- Header -->
-        <header id="header">
+        <header id="header" role="banner">
           <a href="index.html" class="logo"><strong>Ryan Perry's</strong> Portfolio</a>
-          <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+          <ul class="icons" aria-label="Social Media Links">
+            <li><a href="#" class="icon brands fa-twitter" aria-label="Twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f" aria-label="Facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-snapchat-ghost" aria-label="Snapchat"><span class="label">Snapchat</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram" aria-label="Instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-medium-m" aria-label="Medium"><span class="label">Medium</span></a></li>
           </ul>
         </header>
 
-        <!-- Banner -->
-        <section id="banner">
+        <section id="banner" aria-labelledby="welcome-heading">
           <div class="content">
             <header>
-              <h1>Welcome to my page!</h1>
+              <h1 id="welcome-heading">Welcome to my page!</h1>
               <p>A summary of Ryan's professional journey.</p>
             </header>
             <p>Hello, my name is Ryan Perry. I am a junior studying Business Analytics & Marketing at the University of Iowa.</p>
-            <p>Email: ryanperry@uiowa.edu</p>
+            <p>Email: <a href="mailto:ryanperry@uiowa.edu">ryanperry@uiowa.edu</a></p>
             <ul class="actions">
               <li><a href="#" class="button big">Learn More</a></li>
             </ul>
@@ -68,35 +63,34 @@
           </span>
         </section>
 
-        <!-- Class Schedule -->
-        <section>
+        <section aria-labelledby="class-schedule">
           <header class="major">
-            <h2>Class Schedule</h2>
+            <h2 id="class-schedule">Class Schedule</h2>
           </header>
           <div class="features">
             <article>
-              <span class="icon fa-gem"></span>
+              <span class="icon fa-gem" aria-hidden="true"></span>
               <div class="content">
                 <h3>Digital Product Management</h3>
                 <p>Experience Agile workflows, prioritization, and team roles on digital project teams.</p>
               </div>
             </article>
             <article>
-              <span class="icon solid fa-paper-plane"></span>
+              <span class="icon solid fa-paper-plane" aria-hidden="true"></span>
               <div class="content">
                 <h3>Data Wrangling</h3>
                 <p>Learn Python for business analytics and data transformation.</p>
               </div>
             </article>
             <article>
-              <span class="icon solid fa-rocket"></span>
+              <span class="icon solid fa-rocket" aria-hidden="true"></span>
               <div class="content">
                 <h3>Data Mining</h3>
                 <p>Apply predictive techniques like classification, regression, and clustering.</p>
               </div>
             </article>
             <article>
-              <span class="icon solid fa-signal"></span>
+              <span class="icon solid fa-signal" aria-hidden="true"></span>
               <div class="content">
                 <h3>Business Communication & Protocol</h3>
                 <p>Develop professional writing, presentation, and teamwork skills.</p>
@@ -105,46 +99,42 @@
           </div>
         </section>
 
-        <!-- Experience -->
-        <section>
+        <section aria-labelledby="experience">
           <header class="major">
-            <h2>Professional Experience</h2>
+            <h2 id="experience">Professional Experience</h2>
           </header>
           <div class="posts">
             <article>
-              <a href="#" class="image"><img src="images/MSI.jpg" alt="Motorola Solutions" /></a>
+              <a href="#" class="image"><img src="images/MSI.jpg" alt="Motorola Solutions office" /></a>
               <h3>Motorola Solutions - Sales Operations & Communications Intern</h3>
               <p>Worked with Excel, Tableau, and Salesforce to support sales strategies and communications.</p>
               <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
+                <li><a href="#" class="button" aria-label="More about Motorola Solutions role">More</a></li>
               </ul>
             </article>
             <article>
-              <a href="#" class="image"><img src="images/iowa.jpg" alt="University of Iowa" /></a>
+              <a href="#" class="image"><img src="images/iowa.jpg" alt="University of Iowa campus" /></a>
               <h3>Rienow Dorm - Front Desk Clerk</h3>
               <p>Supported over 500 residents with logistics, resources, and student life information.</p>
               <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
+                <li><a href="#" class="button" aria-label="More about front desk role">More</a></li>
               </ul>
             </article>
           </div>
         </section>
       </div>
-    </div>
+    </main>
 
-    <!-- Sidebar -->
-    <div id="sidebar">
+    <aside id="sidebar">
       <div class="inner">
-        <!-- Search -->
         <section id="search" class="alt">
-          <form method="post" action="#">
+          <form method="post" action="#" aria-label="Site Search">
             <label for="query" class="visually-hidden">Search this site</label>
             <input type="text" name="query" id="query" placeholder="Search" />
           </form>
         </section>
 
-        <!-- Menu -->
-        <nav id="menu">
+        <nav id="menu" role="navigation" aria-label="Main menu">
           <header class="major">
             <h2>Menu</h2>
           </header>
@@ -155,12 +145,11 @@
           </ul>
         </nav>
 
-        <!-- Footer -->
-        <footer id="footer">
+        <footer id="footer" role="contentinfo">
           <p>&copy; Ryan Perry. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
         </footer>
       </div>
-    </div>
+    </aside>
   </div>
 
   <!-- Scripts -->

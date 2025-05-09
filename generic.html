@@ -1,17 +1,15 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VNM8Z4HNMK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNM8Z4HNMK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VNM8Z4HNMK');
+    </script>
 
-  gtag('config', 'G-VNM8Z4HNMK');
-</script>
-</script>
     <title>About Ryan</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -28,58 +26,46 @@
     </style>
   </head>
   <body class="is-preload">
-
-    <!-- Wrapper -->
     <div id="wrapper">
-
-      <!-- Main -->
-      <div id="main">
+      <main id="main">
         <div class="inner">
-
-          <!-- Header -->
-          <header id="header">
+          <header id="header" role="banner">
             <a href="index.html" class="logo"><strong>About</strong> Ryan Perry</a>
-            <ul class="icons">
-              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-              <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-              <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+            <ul class="icons" aria-label="Social Media Links">
+              <li><a href="#" class="icon brands fa-twitter" aria-label="Twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon brands fa-facebook-f" aria-label="Facebook"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon brands fa-snapchat-ghost" aria-label="Snapchat"><span class="label">Snapchat</span></a></li>
+              <li><a href="#" class="icon brands fa-instagram" aria-label="Instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands fa-medium-m" aria-label="Medium"><span class="label">Medium</span></a></li>
             </ul>
           </header>
 
-          <!-- Content -->
-          <section>
+          <section aria-labelledby="about-heading">
             <header class="main">
-              <h1>Ryan Perry</h1>
+              <h1 id="about-heading">Ryan Perry</h1>
             </header>
 
-            <span class="image main"><img src="images/pbb_0.jpg" alt="Tippie College" /></span>
+            <span class="image main"><img src="images/pbb_0.jpg" alt="Ryan Perry at Tippie College" /></span>
 
             <p>Ryan Perry is a junior studying Business Analytics & Information Systems, with a second degree in Marketing. He is also pursuing a certificate in Leadership Studies at the Tippie College of Business. Ryan is currently a student at the University of Iowa.</p>
-          
+
             <p>Originally from Downers Grove, Illinois—a suburb of Chicago—Ryan grew up a lifelong Hawkeyes fan thanks to his mother, an Iowa alum. His campus involvement includes Tau Kappa Epsilon (Treasurer), Delta Sigma Pi (Professional Business Fraternity), MoneyThink, and the Sales & Consulting Club. He is also a founder of the Applied AI Club and serves as its Vice President of Innovation. In addition, Ryan is on the Tippie Senate, the student government for the business school, where he currently serves as the Director of Case Competitions.</p>
 
             <hr class="major" />
           </section>
-
         </div>
-      </div>
+      </main>
 
-      <!-- Sidebar -->
-      <div id="sidebar">
+      <aside id="sidebar">
         <div class="inner">
-
-          <!-- Search -->
           <section id="search" class="alt">
-            <form method="post" action="#">
+            <form method="post" action="#" aria-label="Site Search">
               <label for="query" class="visually-hidden">Search this site</label>
               <input type="text" name="query" id="query" placeholder="Search" />
             </form>
           </section>
 
-          <!-- Menu -->
-          <nav id="menu">
+          <nav id="menu" role="navigation" aria-label="Main menu">
             <header class="major">
               <h2>Menu</h2>
             </header>
@@ -90,25 +76,21 @@
             </ul>
           </nav>
 
-          <!-- Footer -->
-          <footer id="footer">
-            <p class="copyright">
-              &copy; Ryan Perry. All rights reserved. Demo Images:
+          <footer id="footer" role="contentinfo">
+            <p>&copy; Ryan Perry. All rights reserved. Demo Images:
               <a href="https://unsplash.com">Unsplash</a>. Design:
               <a href="https://html5up.net">HTML5 UP</a>.
             </p>
           </footer>
-
         </div>
-      </div>
+      </aside>
     </div>
-    
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
   </body>
 </html>
